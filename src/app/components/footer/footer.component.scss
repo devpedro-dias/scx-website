@@ -1,0 +1,31 @@
+@import "../../variables.scss";
+
+footer {
+    background-image: linear-gradient($main-color, $accent-color);
+
+    .maxWidth {
+        width: 85%;
+        margin: auto;
+    }
+    .flexIconFooter {
+        
+        .nav_footer {
+            display: flex;
+            list-style: none;
+        
+
+            .nav_footer_li {
+
+                margin: 1em;
+                .icon_footer {
+                    border: none;
+                    font-size: 2em;
+                    background-color: transparent;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+}

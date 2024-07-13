@@ -1,0 +1,362 @@
+@import "../../variables.scss";
+
+.top-header {
+    
+    display: flex;
+    width: 95%;
+    margin: auto;
+
+
+    .flexTopHeader {
+
+        .top-header-logo_name{
+            font-size: 2.6em;
+        }
+        
+        .top-header-logo_second_name {
+            font-size: 1.6em;
+        } 
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .top-header-cta:nth-child(2) {
+
+        text-decoration: none;
+        color: #027786;
+        justify-content: center;
+        margin-right: auto;
+
+        .flexTopHeader {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            
+                .uppercase {
+                    text-transform: uppercase;
+                }
+        }
+    }
+
+    svg{
+        fill: $main-color;
+    }
+    
+    .links-container {
+        display: flex;
+
+        .flexLinkContainer {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    
+                }
+
+                li > .btn {
+                    font-size: 1.14em;
+                    text-decoration: none;
+                    padding: .7em 1em;
+                    color: $main-color;
+                    font-weight: 700;
+                    display: block;
+                    font-weight: 500;
+                }
+            
+            }
+
+        }
+        
+    }
+
+    #sidebar-active {
+        display: none;
+    }
+      
+    .open-sidebar-button, .close-sidebar-button {
+        display: none;
+    }
+
+    @media(max-width: 1200px) {
+        .top-header {
+            .top-header-logo {
+            
+                img {
+                    width: 8em;
+                    height: 8em;
+                }
+            }
+
+            .flexLinkContainer {
+                flex-direction: column;
+
+                nav {
+                    .services {
+                        display: none;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    @media(min-width: 1200px) {
+
+        .top-header {
+            .top-header-logo {
+    
+                img {
+                    width: 8em;
+                    height: 8em;
+                }
+            }
+
+            .flexTopHeader {
+                .top-header-logo_name {
+                    font-size: 2em;
+                }
+            }
+            
+            .flexLinkContainer {
+                display: flex;
+                flex-direction: row;
+
+                div {
+                    #navbar {
+                        display: none;
+                    }
+                }
+
+                nav {
+                    &.primary-navigation {
+                      margin: 0 auto;
+                      display: block;
+                    
+                      padding: 0 0;  
+                      text-align: center;
+                      font-size: 16px;
+                  
+                      ul li {
+                        list-style: none;
+                        margin: 0 auto;
+                        display: inline-block;
+                        padding: 0 30px;
+                        position: relative;
+                        text-decoration: none;
+                        text-align: center;
+                      }
+                  
+                      li a {
+                        color: $main-color;
+                      }
+                  
+                      li a:hover {
+                        color: $accent-color;
+                      }
+                  
+                      li:hover {
+                        cursor: pointer;
+                      }
+                  
+                      ul li ul {
+                        visibility: hidden;
+                        opacity: 0;
+                        position: absolute;
+                        padding-left: 0;
+                        left: 0;
+                        display: none;
+                        background: white;
+                      }
+                  
+                      ul li:hover > ul,
+                      ul li ul:hover {
+                        visibility: visible;
+                        opacity: 1;
+                        display: block;
+                        min-width: 250px;
+                        text-align: left;
+                        padding-top: 20px;
+                        box-shadow: 0px 3px 5px -1px #ccc;
+                        transition: 1s opacity ease-in-out;
+                      }
+                  
+                      ul li ul li {
+                        clear: both;
+                        width: 100%;
+                        text-align: left;
+                        margin-bottom: 20px;
+                        border-style: none;
+                      }
+                  
+                    }
+                  }
+                  
+                  a {
+                  
+                      text-decoration: none;
+                  
+                      &:hover {
+                          color: #3CA0E7;
+                      }
+                   
+                  }
+                  
+                   ul li ul li a { transition: all 0.5s ease; }
+    
+            }
+                
+            }
+                        
+        } 
+
+    @media(max-width: 1200px) {
+        .top-header-logo {
+            margin-right: 0;
+
+            img {
+                width: 10em;
+                height: 10em;
+            }
+
+            .top-header-logo_name{
+                text-align: center;
+                font-size: 2.2em;
+            }
+            
+            .top-header-logo_second_name {
+                font-size: 1.4em;
+                width: fit-content;
+                text-align: center;
+            } 
+        }
+
+        .top-header-cta {
+            margin-right: auto;
+            
+        }
+
+        .links-container {
+            flex-direction: column;
+        
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 10;
+            width: 100%;
+            height: 100vh;
+        
+            backdrop-filter: blur(.8em);
+            background-color: hsla(0, 0%, 100%, 0.705);
+
+            transition: 1s ease-out;
+            
+            .flexLinkContainer {
+                gap: 6em;
+    
+                li .btn {
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+        .flexLinkContainer {
+            gap: 6em;
+
+            li .btn {
+                font-size: 1.4em;
+            }
+        }
+
+        .nav_header_icon {
+            display: flex;
+            gap: 1em;
+
+            .icon_header {
+                font-size: 1.8em;
+                color: $main-color;
+            }
+            
+        }
+
+        #navbar {
+            flex-direction: column;
+        }
+
+        .close-sidebar-button {
+            padding: 2em 2em 4em;
+            display: block;
+        }
+        .open-sidebar-button  {
+            padding: 4em 1em;
+            display: block;
+        }
+        
+          #sidebar-active:checked~.links-container {
+            right: 0;
+        }
+        
+          #sidebar-active:checked~#overlay {
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+        
+    }
+
+    @media(min-width: 1551px) {
+        .top-header {
+
+            .flexTopHeader {
+
+                .top-header-logo_name{
+                    text-align: center;
+                    font-size: 3em;
+                }
+                
+                .top-header-logo_second_name {
+                    font-size: 1.6em;
+                    width: fit-content;
+                    text-align: center;
+                } 
+                
+            }
+
+            .links-container {
+                .flexLinkContainer {
+                    margin-top: 1em;
+                    justify-content: center;
+                    
+                    gap: 1em;
+
+                
+                }
+            }
+            
+
+            .nav_header_icon {
+                gap: 1em;
+
+                .icon_header {
+                    font-size: 1.2em;
+                    color: $main-color;
+                }
+                
+            }
+            
+        }
+    }
+        

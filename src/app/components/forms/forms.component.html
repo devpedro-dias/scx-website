@@ -1,0 +1,59 @@
+<div [formGroup]="form" class="formContainer">
+<form action="javascript:void(0)" (submit)="send()" class="form">
+    
+    <label for="name" class="fieldset_label">Empresa</label>
+        <input 
+        formControlName="from_name" 
+        type="text" 
+        name="name" 
+        id="name" 
+        required
+        ngModel
+        autocomplete="off"
+        class="fieldset_input"
+        required/>
+
+
+        <label for="email" class="fieldset_label">E-mail</label>
+        <input 
+        formControlName="from_email" 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="example@example.com"
+        class="fieldset_input" 
+        required
+        ngModel/>
+
+
+        <label for="subject" class="fieldset_label">Assunto</label>
+        <input 
+        formControlName="subject" 
+        type="text" 
+        name="subject" 
+        id="subject"
+        autocomplete="off" 
+        class="fieldset_input"
+        placeholder="Digite o assunto"
+        required
+        ngModel/>
+
+
+        <label for="message" class="fieldset_label">Mensagem</label>
+        <textarea
+        formControlName="message"
+        type="text" 
+        name="message" 
+        id="message" 
+        maxlength="200"
+        placeholder="Digite sua mensagem"
+        required
+        ngModel
+        ></textarea>
+         
+        <!-- {{ form.value | json }} -->
+        <div class="flexContainer">
+            <button type="submit">Enviar Mensagem</button>
+        </div>
+</form>
+</div>
