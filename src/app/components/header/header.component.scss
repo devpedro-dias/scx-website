@@ -3,7 +3,7 @@
 .top-header {
     
     display: flex;
-    width: 95%;
+    width: 90%;
     margin: auto;
 
 
@@ -24,6 +24,9 @@
         cursor: pointer;
     }
 
+    .top-header-cta:nth-child(1) {
+        margin-right: 3em;
+    }
     .top-header-cta:nth-child(2) {
 
         text-decoration: none;
@@ -319,6 +322,15 @@
 
     @media(min-width: 1551px) {
         .top-header {
+
+            .top-header-logo {
+                margin-right: 0;
+    
+                img {
+                    width: 10em;
+                    height: 10em;
+                }
+            }
 
             .flexTopHeader {
 

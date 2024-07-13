@@ -168,6 +168,22 @@
     }
 }
 
+@media(min-width:700px) {
+        .flexIconFooter {
+            display: flex;
+            justify-content: center;
+            .nav_info {
+                display: flex;
+                gap: 1em;
+
+                .nav_info_li {
+                    margin: 1em 0;
+                }
+            }
+        }
+}
+
+
 @media(min-width:950px) {
     .col-md-6 {
         width: calc(50% - 1rem);
@@ -185,19 +201,6 @@
                 flex-direction: row;
                 gap: 4em;
                 margin: 2em 0 6em;
-            }
-        }
-    }
-
-    .flexIconFooter {
-        display: flex;
-        justify-content: center;
-        .nav_info {
-            display: flex;
-            gap: 1em;
-
-            .nav_info_li {
-                margin: 1em 0;
             }
         }
     }
