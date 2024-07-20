@@ -5,6 +5,7 @@ import { FreteMaritimoComponent } from './pages/frete-maritimo/frete-maritimo.co
 import { DesembaracoComponent } from './pages/desembaraco/desembaraco.component';
 import { TransporteRodoviarioComponent } from './pages/transporte-rodoviario/transporte-rodoviario.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { SeguroCargaComponent } from './pages/seguro-carga/seguro-carga.component';
 
 
 export const routes: Routes = [
@@ -26,6 +27,7 @@ export const routes: Routes = [
             {path: 'frete-aereo', title: 'SCX | Frete Aéreo', component: FreteAereoComponent},
             {path: 'desembaraco-aduaneiro', title: 'SCX | Desembaraço Aduaneiro', component: DesembaracoComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
             {path: 'contato', title: 'SCX | Contato', component: ContatoComponent},
             {path: 'home', title: 'SCX | Home', component: HomeComponent}
         ]
@@ -36,6 +38,7 @@ export const routes: Routes = [
         children: [
             {path: 'frete-aereo', title: 'SCX | Frete Aéreo', component: FreteAereoComponent},
             {path: 'desembaraco-aduaneiro', title: 'SCX | Desembaraço Aduaneiro', component: DesembaracoComponent},
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
             {path: 'contato', title: 'SCX | Contato', component: ContatoComponent},
             {path: 'home', title: 'SCX | Home', component: HomeComponent},
@@ -48,6 +51,7 @@ export const routes: Routes = [
         children: [
             {path: 'desembaraco-aduaneiro', title: 'SCX | Desembaraço Aduaneiro', component: DesembaracoComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
             {path: 'contato', title: 'SCX | Contato', component: ContatoComponent},
             {path: 'home', title: 'SCX | Home', component: HomeComponent},
             {path: 'frete-aereo', title: 'SCX | Frete Aéreo', component: FreteAereoComponent},
@@ -58,6 +62,20 @@ export const routes: Routes = [
         path: 'transporte-rodoviario', 'title': 'SCX | Transporte Rodoviário',
         component: TransporteRodoviarioComponent,
         children: [
+            {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
+            {path: 'contato', title: 'SCX | Contato', component: ContatoComponent},
+            {path: 'home', title: 'SCX | Home', component: HomeComponent},
+            {path: 'frete-aereo', title: 'SCX | Frete Aéreo', component: FreteAereoComponent},
+            {path: 'frete-maritimo', title: 'SCX | Frete Marítimo', component: FreteMaritimoComponent},
+            {path: 'desembaraco-aduaneiro', title: 'SCX | Desembaraço Aduaneiro', component: DesembaracoComponent},
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent}
+        ]
+    },
+    {
+        path: 'seguro-carga', 'title': 'SCX | Seguro de Carga',
+        component: TransporteRodoviarioComponent,
+        children: [
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
             {path: 'contato', title: 'SCX | Contato', component: ContatoComponent},
             {path: 'home', title: 'SCX | Home', component: HomeComponent},
@@ -76,6 +94,7 @@ export const routes: Routes = [
             {path: 'frete-maritimo', title: 'SCX | Frete Marítimo', component: FreteMaritimoComponent},
             {path: 'desembaraco-aduaneiro', title: 'SCX | Desembaraço Aduaneiro', component: DesembaracoComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},
+            {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
         ]
     }
 ];
