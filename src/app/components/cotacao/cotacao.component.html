@@ -3,7 +3,6 @@
         <h2>Cotação do dia - {{ myDate | date:'longDate' }}</h2>
     </div>
 
-    <hr>
     <div *ngIf="moedas.length > 0" class="cotacaoContainer">
         <div *ngFor="let moeda of moedas" class="cotacaoContainer_content">
             <p>{{ moeda.code }}</p>

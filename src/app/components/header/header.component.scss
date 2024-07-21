@@ -8,9 +8,9 @@
 
 
     .flexTopHeader {
-
+        
         .top-header-logo_name{
-            font-size: 2.6em;
+            font-size: 2.2em;
             text-align: left;
         }
         
@@ -99,6 +99,14 @@
                 }
             }
 
+            .flexTopHeader {
+                .top-header-logo_name{
+                    font-size: 1.7em;
+                    text-align: left;
+                }
+
+            }
+
             .flexLinkContainer {
                 flex-direction: column;
 
@@ -116,6 +124,12 @@
     @media(min-width: 1200px) {
 
         .top-header {
+
+            .top-header-cta:nth-child(1) {
+                margin-right: 3em;
+            }
+
+
             .top-header-logo {
     
                 img {
@@ -201,7 +215,6 @@
                         clear: both;
                         width: 100%;
                         text-align: left;
-                        margin-bottom: 20px;
                         border-style: none;
                       }
                   
@@ -339,7 +352,7 @@
 
                 .top-header-logo_name{
                     text-align: left;
-                    font-size: 3em;
+                    font-size: 2.6em;
                 }
                 
                 .top-header-logo_second_name {

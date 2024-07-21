@@ -73,7 +73,7 @@ export const routes: Routes = [
     },
     {
         path: 'seguro-carga', 'title': 'SCX | Seguro de Carga',
-        component: TransporteRodoviarioComponent,
+        component: SeguroCargaComponent,
         children: [
             {path: 'seguro-carga', title: 'SCX | Seguro de Carga', component: SeguroCargaComponent},
             {path: 'transporte-rodoviario', title: 'SCX | Transporte Rodoviário', component: TransporteRodoviarioComponent},

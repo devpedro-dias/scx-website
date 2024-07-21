@@ -1,25 +1,18 @@
 @import "../../variables.scss";
 
 section {
-    width: fit-content;
+    background: linear-gradient($accent-color, $main-color );;
     margin: 3em 0 1em;
-    border: 1px solid $main-color;
     border-radius: 10px;
     box-shadow: 0px 2px 10px rgba($color: #000000, $alpha: 0.3);
-    padding: .6em;
+    padding: 1.6em;
     
 
     h2 {
-        color: $main-color;
+        color: white;
         font-size: 1.2em;
         font-weight: 500;
         margin: .4em 0;
-    }
-
-    hr {
-        color: $accent-color;
-        width: 100%;
-        margin: auto;
     }
 
     .cotacaoContainer {
@@ -34,11 +27,11 @@ section {
 
             p {
                 font-size: 1.2em;
-                color: $main-color;
+                color: white;
                 font-weight: 500;
             }
             .green-text {
-                color: green;
+                color: white;
                 font-weight: 600;
             }   
         }
