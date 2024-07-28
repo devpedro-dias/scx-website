@@ -10,27 +10,31 @@ section {
 
     h2 {
         color: white;
-        font-size: 1.2em;
+        font-size: 1.4em;
         font-weight: 500;
         margin: .4em 0;
     }
 
     .cotacaoContainer {
         display: flex;
-        width: fit-content;
+        align-items: center;
+        justify-content: center;
         gap: 1em;
-        margin: left;
     
         .cotacaoContainer_content {
+            display: flex;
+            flex-direction: column;
             padding: .4em 1.2em;
             
 
             p {
+                text-align: center;
                 font-size: 1.2em;
                 color: white;
                 font-weight: 500;
             }
             .green-text {
+                text-align: center;
                 color: white;
                 font-weight: 600;
             }   
