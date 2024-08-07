@@ -18,6 +18,7 @@ import { Moeda } from '../../interfaces/moeda';
 export class CotacaoComponent implements OnInit{
   moedas: Moeda[] = [];
   myDate = Date.now();
+
   
   constructor (private moedasService: MoedasService) { }
 

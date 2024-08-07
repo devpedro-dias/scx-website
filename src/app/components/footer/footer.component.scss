@@ -79,6 +79,27 @@ footer {
             }
           }
         }
+        .nav_footer_icon {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+          gap: 1em;
+
+          .nav_footer_li_icon {
+
+            a {
+              text-decoration: none;
+              color: white;
+              opacity: 0.5;
+              transition: all 0.55s;
+              cursor: default;
+              justify-content: center;
+              font-size: 2em;
+              padding: 0;
+            }
+          } 
+        }
       }  
     }
 
@@ -107,6 +128,16 @@ footer {
 
                 .nav_footer {
                     align-items: start;
+                }
+
+                .nav_icon {
+                  display: flex;
+                }
+
+
+                .nav_footer_icon {
+                  flex-direction: row;
+                  gap: 3em;
                 }
             }
         }

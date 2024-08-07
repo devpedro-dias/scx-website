@@ -38,7 +38,7 @@ form {
 
         button {
             margin: 3em;
-            background: linear-gradient($main-color, $accent-color 50%);
+            background: $main-color;
             border: none;
             cursor: pointer;
             color: white;
