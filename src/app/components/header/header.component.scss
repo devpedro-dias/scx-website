@@ -3,8 +3,7 @@
 .top-header {
     
     display: flex;
-    width: 90%;
-    margin: auto;
+    justify-content: center;
 
 
     .flexTopHeader {
@@ -369,6 +368,13 @@
                 
             }
             
+        }
+    }
+
+    @media  (min-width: 391px) {
+        .top-header {
+            margin: auto;
+            gap: 0;
         }
     }
         
