@@ -56,4 +56,11 @@
             <button type="submit">Enviar Mensagem</button>
         </div>
 </form>
+
+<div *ngIf="successMessage" class="successMessage">
+    {{ successMessage }}
+  </div>
+  <div *ngIf="errorMessage" class="errorMessage">
+    {{ errorMessage }}
+  </div>
 </div>
