@@ -1,8 +1,8 @@
 export interface Moeda {
-        code: String,
-        codein: String,
-        name: String,
-        high: String ,
-        low: String ,
-        create_date: String;
-}
+        code: string;
+        codein: string;
+        name: string;
+        high: string;
+        low: string;
+        create_date: string;
+      }

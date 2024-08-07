@@ -40,10 +40,12 @@ export class CotacaoComponent implements OnInit{
   handleError(error: any) {
     if (error.status === 404) {
       console.error('Nenhuma moeda encontrada.');
-      // Exibir uma mensagem de erro amigável para o usuário
     } else {
       console.error('Erro ao obter as moedas:', error);
-      // Tratar outros tipos de erros
     }
   } 
+  
+  parseToNumber(value: string): number {
+    return parseFloat(value);
+  }
 }
