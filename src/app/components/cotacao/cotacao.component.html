@@ -1,6 +1,6 @@
 <section>
     <div>
-        <h2>Cotação do dia - {{ myDate | date:'longDate' }}</h2>
+        <h2>Cotação do dia - {{ myDate | date:'longDate':'pt-BR' }}</h2>
     </div>
 
     <div *ngIf="moedas.length > 0" class="cotacaoContainer">
