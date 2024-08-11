@@ -83,7 +83,28 @@
         display: none;
     }
 
-    @media(max-width: 1200px) {
+    @media screen and (min-width: 650px) {
+        .top-header {
+        
+            .top-header-logo {
+            margin-right: 3em;
+                img {
+                    width: 8em;
+                    height: 8em;
+                }
+            }
+
+            .flexTopHeader {
+                .top-header-logo_name{
+                    font-size: 2.6em;
+                    text-align: left;
+                }
+
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
         .top-header {
             .top-header-logo {
             
@@ -95,7 +116,7 @@
 
             .flexTopHeader {
                 .top-header-logo_name{
-                    font-size: 1.7em;
+                    font-size: 2.2em;
                     text-align: left;
                 }
 
@@ -106,7 +127,7 @@
 
                 nav {
                     .services {
-                        display: none;
+                        display: block;
                     }
                     
                 }
@@ -118,7 +139,7 @@
     @media(min-width: 1200px) {
 
         .top-header {
-
+            max-width: 100%;
             .top-header-cta:nth-child(1) {
                 margin-right: 3em;
             }
@@ -134,7 +155,7 @@
 
             .flexTopHeader {
                 .top-header-logo_name {
-                    font-size: 2.2em;
+                    font-size: 2.4em;
                 }
 
                 .top-header-cta:nth-child(1) {
@@ -249,10 +270,6 @@
             
         }
 
-        .top-header-cta {
-            margin-right: auto;
-            
-        }
 
         .links-container {
             flex-direction: column;
@@ -327,6 +344,7 @@
 
     @media(min-width: 1551px) {
         .top-header {
+            max-width: 90%;
 
             .top-header-logo {
                 margin-right: 0;
@@ -341,7 +359,7 @@
 
                 .top-header-logo_name{
                     text-align: left;
-                    font-size: 2.6em;
+                    font-size: 3em;
                 }
                 
             }
