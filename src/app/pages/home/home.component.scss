@@ -67,10 +67,10 @@
         }
 
         .content {
-
+            margin-top: 1em;
             p {
                 color: white;
-                margin-bottom: 4em;
+                margin-bottom: 1em;
             }
 
         }
@@ -212,12 +212,27 @@
         
                 .imageMainContent {
                     width: 100%;
-                    margin: 1.2em 0 auto;
+                    margin: 0 0 auto;
         
                     img {
                         max-width: 100%;
         
                     }
+                }
+            }
+        }
+
+        .reversedColor {
+
+            .content {
+                max-width: 100%;
+                align-items: center;
+    
+                .rowIcons {
+                    justify-content: center;
+                    flex-direction: row;
+                    gap: 4em;
+                    margin: 2em 0 2em;
                 }
             }
         }

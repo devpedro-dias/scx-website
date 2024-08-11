@@ -344,7 +344,7 @@
 
     @media(min-width: 1551px) {
         .top-header {
-            max-width: 90%;
+            max-width: 95%;
 
             .top-header-logo {
                 margin-right: 0;
@@ -360,6 +360,7 @@
                 .top-header-logo_name{
                     text-align: left;
                     font-size: 3em;
+                    height: 60%;
                 }
                 
             }
