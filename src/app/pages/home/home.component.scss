@@ -151,7 +151,20 @@
     }
 }
 
-@media(min-width:950px) {
+@media screen and (min-width: 800px) {
+    .split {
+        display: flex;
+        gap: 6em;
+        justify-content: center;
+        align-items: center;
+        
+        .content-split {
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width:950px) {
     .col-md-6 {
         width: calc(50% - 1rem);
     }
@@ -206,22 +219,6 @@
         
                     }
                 }
-            }
-        }
-
-        .split {
-            display: flex;
-            gap: 6em;
-            justify-content: center;
-            align-items: center;
-            
-            .content-split {
-                max-width: 50%;
-
-            }
-
-            .content-cotacao {
-
             }
         }
     }

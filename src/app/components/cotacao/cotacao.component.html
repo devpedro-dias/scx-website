@@ -6,7 +6,7 @@
     <div *ngIf="moedas.length > 0" class="cotacaoContainer">
       <div *ngFor="let moeda of moedas" class="cotacaoContainer_content">
         <p>{{ moeda.code }}</p>
-        <p><span class="green-text">{{ parseToNumber(moeda.high) | currency:'BRL':'symbol':'1.2-2' }}</span></p>
+        <p><span class="green-text">{{ parseToNumber(moeda.high) | currency:'BRL':'symbol':'1.4-4' }}</span></p>
       </div>
     </div>
     <div *ngIf="moedas.length === 0">
