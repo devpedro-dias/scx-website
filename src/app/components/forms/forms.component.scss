@@ -50,15 +50,32 @@ form {
 
 }
 
-.successMessage {
-    color: green;
-    margin-top: 10px;
-  }
-  
-  .errorMessage {
-    color: red;
-    margin-top: 10px;
-  }
+.container-message {
+    position: relative;
+
+    .container-message-background {
+        position: absolute  ;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 2px 2px 3px rgba($color: #000000, $alpha: .2);
+        transform: translateX(-50%);
+        left: 50%;
+        width:max-content;
+        top: -40px;
+    
+        .successMessage {
+            color: black;
+            margin: .2em 1em;
+          }
+          
+          .errorMessage {
+            color: black;
+            margin: .2em 1em;
+          }
+    
+    }
+}
+
   
 
 @media(max-width: 700px) {
@@ -68,6 +85,11 @@ form {
             width: 80%;
         }
 
+    }
+    .container-message {
+        .container-message-background {
+            left: 50%
+        }
     }
 }
 

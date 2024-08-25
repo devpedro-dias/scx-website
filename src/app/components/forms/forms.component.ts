@@ -29,7 +29,7 @@ export class FormsComponent {
 
   async send() {
     if (this.form.invalid) {
-      this.errorMessage = 'Por favor, preencha todos os campos obrigatórios.';
+      this.errorMessage = 'Preencha todos os campos.';
       this.successMessage = '';
       return;
     }
