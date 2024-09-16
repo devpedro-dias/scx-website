@@ -1,0 +1,16 @@
+{
+    "name": "scx/test",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Scx\\Test\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pedro Dias",
+            "email": "pedrocorchogdev@gmail.com"
+        }
+    ],
+    "require": {}
+}
